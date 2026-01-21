@@ -1,4 +1,4 @@
-# 🌐 Portfólio Pessoal - Arthur Hirche
+# 🌐 Portfólio Pessoal - Larissa Lopes
 
 Bem-vindo ao meu portfólio desenvolvido com **HTML, CSS e JavaScript puro**!  
 Este projeto foi criado com o objetivo de apresentar um pouco mais sobre mim, minhas experiências profissionais, formação acadêmica e permitir o fácil acesso ao meu currículo e redes sociais.
@@ -29,8 +29,9 @@ Este portfólio é uma página responsiva e interativa onde você poderá:
 Você pode visualizar o portfólio diretamente abrindo o arquivo `index.html` no navegador:
 
 ```bash
-git clone https://github.com/ArtHirche/arthirche.github.io
-cd arthirche.github.io
+git clone https://github.com/Lopes246/lopes246.github.io.git
+cd lopes246.github.io
+
 # Clique duas vezes no arquivo index.html ou abra no navegador de sua preferência
 ```
 

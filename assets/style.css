@@ -50,7 +50,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: rgba(0,0,0,.8);
     display: flex;
     justify-content: space-between;
@@ -58,13 +58,13 @@ body {
     z-index: 1000;
 }
 
-.logo { font-size: 3rem; font-weight: 800; }
+.logo { font-size: 2rem; font-weight: 800; }
 .logo span { color: var(--main-color); }
 
 .navbar a {
-    margin-left: 3rem;
+    margin-left: 2rem;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     transition: .3s;
 }
 .navbar a:hover {

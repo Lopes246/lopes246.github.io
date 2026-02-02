@@ -1,113 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Larissa Lopes | Java Full Stack</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <title>Larissa Lopes | Desenvolvedora Java Full Stack</title>
+  <meta name="description" content="Portfólio profissional de Larissa Lopes, desenvolvedora Java Full Stack. Projetos, tecnologias e contato direto.">
+  <meta name="keywords" content="Java, Full Stack, Desenvolvedora, Portfólio, Spring Boot, HTML, CSS, JavaScript">
+  <meta name="author" content="Larissa Lopes">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lari| Desenvolvedora Java Full Stack">
+  <meta property="og:description" content="Portfólio profissional com projetos em Java, Spring Boot e desenvolvimento web.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
 </head>
 <body>
 
-<!-- LOADING -->
-<div id="loader">
-    <span></span>
-</div>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">Larii<span>.Java</span></div>
+      <div class="preloader-spinner">
+        <div class="spinner"></div>
+      </div>
+      <p>Carregando...</p>
+    </div>
+  </div>
 
+  <!-- PARTICLES BACKGROUND -->
+  <canvas id="particles"></canvas>
 
-<!-- PARTICLES -->
-<canvas id="particles"></canvas>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <h2 class="logo">Larii<span>.Java</span></h2>
+      <nav class="navbar" id="navbar">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Tecnologias</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
 
-<header class="header">
-    <a href="#home" class="logo">Lari<span>.java</span></a>
-    
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <nav class="navbar">
-        <a href="#home">Início</a>
-        <a href="#education">Jornada</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
-    </nav>
-</header>
-
-<section class="home reveal" id="home">
-    <div class="home-content">
-        <h1>Olá, sou <span>Larissa</span></h1>
-        <h3 class="text-animation">Desenvolvedora FullStack <span></span></h3>
-        <p>
-            Engenheira de Software em formação, focada em Java,
-            Spring Boot e desenvolvimento web moderno.
-        </p>
-
-        <div class="btn-group">
-            <a href="#contact" class="btn">Entre em contato</a>
-            <a href="https://wa.me/5551995353771" target="_blank" class="btn secondary">
-                <i class="bx bxl-whatsapp"></i> WhatsApp
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Olá, eu sou a</p>
+          <h1 class="hero-title">Larii!</h1>
+          <h2 class="hero-subtitle">Desenvolvedora <span class="highlight">Java Full Stack</span></h2>
+          <p class="hero-description">
+            Crio aplicações modernas, funcionais e bem estruturadas,
+            focadas em resolver problemas reais com código limpo e escalável.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class='bx bx-code-alt'></i> Ver Projetos
             </a>
+            <a href="https://wa.me/55519995353771" target="_blank" class="btn btn-whatsapp">
+              <i class='bx bxl-whatsapp'></i> WhatsApp
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/Lopes246" target="_blank" class="social-link" aria-label="GitHub">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://linkedin.com/in/larissalps" target="_blank" class="social-link" aria-label="LinkedIn">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="mailto:contatolps6@gmail.com" class="social-link" aria-label="Email">
+              <i class='bx bx-envelope'></i>
+            </a>
+          </div>
         </div>
-    </div>
-
-    <div class="home-img">
-        <img src="assets/image/profile.png" alt="Larissa Lopes" onerror="this.style.display='none'">
-    </div>
-</section>
-
-<section class="education reveal" id="education">
-    <h2 class="heading">Minha <span>Jornada</span></h2>
-
-    <div class="timeline-items">
-        <div class="timeline-item">
-            <h3>Quem sou eu</h3>
-            <p>20 anos, estudante de Engenharia de Software, apaixonada por Java e Full Stack.</p>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <div class="blob"></div>
+            <img src="assets/img/perfil.png" alt="Larissa Lopes" class="profile-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%233b82f6%22/><text x=%2250%22 y=%2255%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2240%22>👩‍💻</text></svg>'">
+          </div>
         </div>
-        <div class="timeline-item">
-            <h3>Formação Técnica</h3>
-            <p>Curso técnico em TI, redes e manutenção de computadores.</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Idiomas</h3>
-            <p>Inglês intermediário/avançado e espanhol básico.</p>
-        </div>
+      </div>
     </div>
-</section>
-
-<section class="skills reveal" id="skills">
-    <h2 class="heading">Minhas <span>Habilidades</span></h2>
-
-    <div class="skills-container">
-        <div class="skill-box"><i class="bx bxl-java"></i><h3>Java</h3></div>
-        <div class="skill-box"><i class="bx bxl-html5"></i><h3>HTML5</h3></div>
-        <div class="skill-box"><i class="bx bxl-css3"></i><h3>CSS3</h3></div>
-        <div class="skill-box"><i class="bx bxl-javascript"></i><h3>JavaScript</h3></div>
-        <div class="skill-box"><i class="bx bxs-data"></i><h3>MySQL</h3></div>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class='bx bx-chevron-down'></i>
+      </a>
     </div>
-</section>
+  </section>
 
-<section class="projects reveal" id="projects">
-    <h2 class="heading">Meus <span>Projetos</span></h2>
-    <div class="projects-container" id="github-repos"></div>
-</section>
+  <!-- SOBRE -->
+  <section id="about" class="section reveal">
+    <div class="section-container">
+      <h2 class="section-title">
+        <i class='bx bx-user'></i> Sobre mim
+      </h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Sou <strong>desenvolvedora Java Full Stack</strong> com paixão pelo backend e Spring Boot,
+            mas também amo criar interfaces modernas e intuitivas no frontend.
+          </p>
+          <p>
+            Busco sempre escrever código <strong>limpo, organizado e escalável</strong>,
+            seguindo as melhores práticas do mercado e padrões de projeto.
+          </p>
+          <p>
+            Estou em constante aprendizado, sempre explorando novas tecnologias
+            e trabalhando em projetos desafiadores.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projetos Concluídos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="contact reveal" id="contact">
-    <h2 class="heading">Entre em <span>Contato</span></h2>
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <div class="section-container">
+      <h2 class="section-title">
+        <i class='bx bx-code'></i> Tecnologias
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-card animated" data-tooltip="Java 17+">
+          <div class="skill-icon"><img src="assets/img/java.png" alt="Java"></div>
+          <span>Java</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="Spring Boot 3">
+          <div class="skill-icon"><img src="assets/img/spring.png" alt="Spring Boot"></div>
+          <span>Spring Boot</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="HTML5 Semântico">
+          <div class="skill-icon"><img src="assets/img/html.png" alt="HTML5"></div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="CSS3 Moderno">
+          <div class="skill-icon"><img src="assets/img/css.png" alt="CSS3"></div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="JavaScript ES6+">
+          <div class="skill-icon"><img src="assets/img/js.png" alt="JavaScript"></div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="Git e GitHub">
+          <div class="skill-icon"><img src="assets/img/github.png" alt="GitHub"></div>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="Python">
+          <div class="skill-icon"><img src="assets/img/python.png" alt="Python"></div>
+          <span>Python</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="Kotlin">
+          <div class="skill-icon"><img src="assets/img/kotlin.png" alt="Kotlin"></div>
+          <span>Kotlin</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="React">
+          <div class="skill-icon"><img src="assets/img/react.png" alt="React"></div>
+          <span>React</span>
+        </div>
+        <div class="skill-card animated" data-tooltip="Git">
+          <div class="skill-icon"><img src="assets/img/git.png" alt="Git"></div>
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="contact-box">
-        <p>Quer conversar sobre oportunidades ou projetos?</p>
-        <a href="https://wa.me/5551995353771" target="_blank" class="btn">
-            <i class="bx bxl-whatsapp"></i> Falar comigo
+  <!-- PROJETOS -->
+  <section id="projects" class="section reveal">
+    <div class="section-container">
+      <h2 class="section-title">
+        <i class='bx bx-folder-open'></i> Projetos
+      </h2>
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver Projeto">
+                <i class='bx bx-external-link'></i>
+              </a>
+              <a href="https://lopes246.github.io/" target="_blank" class="project-link" aria-label="Ver Código">
+                <i class='bx bxl-github'></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfólio Profissional</h3>
+            <p>Portfólio desenvolvido do zero com design moderno, animações suaves e apresentação profissional.</p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card">
+          <div class="project-image api-bg">
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver Projeto">
+                <i class='bx bx-external-link'></i>
+              </a>
+              <a href="#" target="_blank" class="project-link" aria-label="Ver Código">
+                <i class='bx bxl-github'></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>API REST Java</h3>
+            <p>API REST com Spring Boot, seguindo boas práticas, arquitetura organizada e documentação.</p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card">
+          <div class="project-image system-bg">
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver Projeto">
+                <i class='bx bx-external-link'></i>
+              </a>
+              <a href="#" target="_blank" class="project-link" aria-label="Ver Código">
+                <i class='bx bxl-github'></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Sistema de Gestão</h3>
+            <p>Sistema completo para gestão de recursos com interface intuitiva e backend robusto.</p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Repositories -->
+      <div class="github-section">
+        <h3 class="github-title">
+          <i class='bx bxl-github'></i> Meus Repositórios GitHub
+        </h3>
+        <div id="github-repos" class="github-grid">
+          <!-- Repositórios serão carregados via JavaScript -->
+          <div class="loading-repos">
+            <div class="spinner-small"></div>
+            <p>Carregando repositórios...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact" class="section reveal">
+    <div class="section-container">
+      <h2 class="section-title">
+        <i class='bx bx-paper-plane'></i> Contato
+      </h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>Vamos trabalhar juntos? Entre em contato comigo através das redes sociais ou envie um e-mail.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class='bx bx-envelope'></i>
+              <span>contatolps6@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class='bx bx-map'></i>
+              <span>Brasil</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-buttons">
+          <a href="https://github.com/Lopes246" target="_blank" class="btn btn-github">
+            <i class='bx bxl-github'></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/larissalps" target="_blank" class="btn btn-linkedin">
+            <i class='bx bxl-linkedin'></i> LinkedIn
+          </a>
+          <a href="mailto:contatolps6@gmail.com" class="btn btn-email">
+            <i class='bx bx-envelope'></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3 class="footer-logo">Larii<span>Dev</span></h3>
+        <p class="footer-text">Desenvolvedora Java Full Stack</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/Lopes246" target="_blank" aria-label="GitHub">
+          <i class='bx bxl-github'></i>
         </a>
+        <a href="https://linkedin.com/in/larissalps" target="_blank" aria-label="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
     </div>
-</section>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Larissa Lopes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-<!-- GATINHO -->
-<img src="assets/image/cat.png" class="cat" alt="Gatinho">
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <i class='bx bx-chevron-up'></i>
+  </button>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+

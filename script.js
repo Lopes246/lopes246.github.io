@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             loader.style.display = 'none';
         }, 500); // tempo da transição de fade
-    }, 1000); // ⬅️ TEMPO DO LOADING EM MILISSEGUNDOS
+    }, 1000); // TEMPO DO LOADING EM MILISSEGUNDOS
 });
 
 

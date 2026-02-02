@@ -1,9 +1,9 @@
 :root {
     --bg-color: #070707;
     --second-bg-color: #111;
-    --main-color: #ff1717;
+    --main-color: #f00707;
     --text-color: #fff;
-    --glow: rgb(247, 3, 3);
+    --glow: rgb(207, 6, 6);
 }
 
 * {
@@ -186,14 +186,11 @@ section {
     bottom: 20px;
     right: 20px;
     width: 80px;
-    opacity: 8;
+    opacity: 0.8;
     transition: .4s;
-    .cat {
-    display: none;
-}
-
+    cursor: pointer;
+    display: block;
 }
 .cat:hover {
     transform: scale(1.2) rotate(5deg);
-    
 }
